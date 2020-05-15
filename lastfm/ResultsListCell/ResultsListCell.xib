@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="resultsListCell" rowHeight="60" id="koE-0e-Y8o" userLabel="ResultsListCell" customClass="ResultsListCell" customModule="lastfm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="koE-0e-Y8o" id="RLR-ZR-o66">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-qe-czP">
+                        <rect key="frame" x="20" y="11" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PDT-qe-czP" secondAttribute="height" multiplier="1:1" id="eca-WZ-aA0"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-Jv-O5V">
+                        <rect key="frame" x="63" y="21" width="307" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-IL-UaW" userLabel="Album Name">
+                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S4I-Jv-O5V" firstAttribute="centerY" secondItem="PDT-qe-czP" secondAttribute="centerY" id="637-0Q-lzj"/>
+                    <constraint firstItem="S4I-Jv-O5V" firstAttribute="leading" secondItem="PDT-qe-czP" secondAttribute="trailing" constant="5" id="6hC-70-Vol"/>
+                    <constraint firstItem="PDT-qe-czP" firstAttribute="top" secondItem="RLR-ZR-o66" secondAttribute="topMargin" id="9R8-u4-SrR"/>
+                    <constraint firstItem="PDT-qe-czP" firstAttribute="leading" secondItem="RLR-ZR-o66" secondAttribute="leadingMargin" id="JMH-1a-ao2"/>
+                    <constraint firstItem="PDT-qe-czP" firstAttribute="bottom" secondItem="RLR-ZR-o66" secondAttribute="bottomMargin" id="mG4-Kw-kg8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="S4I-Jv-O5V" secondAttribute="trailing" constant="5" id="YyS-EM-yuU"/>
+            </constraints>
+            <connections>
+                <outlet property="albumImage" destination="PDT-qe-czP" id="3xE-B3-J1W"/>
+                <outlet property="albumName" destination="hN9-IL-UaW" id="ts8-Ec-wOr"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="154"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,42 @@
+{
+  "artist": {
+    "name": "Cher",
+    "mbid": "bfcc6d75-a6a5-4bc6-8282-47aec8531818",
+    "url": "https://www.last.fm/music/Cher",
+    "image": [],
+    "streamable": "0",
+    "ontour": "0",
+    "stats": {
+      "listeners": "1177231",
+      "playcount": "17539061"
+    },
+    "similar": {
+      "artist": [
+        {
+          "name": "Sonny & Cher",
+          "url": "https://www.last.fm/music/Sonny+&+Cher",
+          "image": []
+        }
+      ]
+    },
+    "tags": {
+      "tag": [
+        {
+          "name": "pop",
+          "url": "https://www.last.fm/tag/pop"
+        }
+      ]
+    },
+    "bio": {
+      "links": {
+        "link": {
+          "#text": "",
+          "rel": "original",
+          "href": "https://last.fm/music/Cher/+wiki"
+        }
+      },
+      "published": "17 Feb 2006, 22:09",
+      "summary": ""
+    }
+  }
+}
